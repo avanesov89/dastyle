@@ -1,0 +1,50 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    @include container();
+    @include md(max-width, rem(690));
+    @include lg(max-width, rem(930));
+    @include xl(max-width, rem(1210));
+}
+
+.section {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+
+
+$main-color: #333;
+$red-color: #E31919;
+$transition: all 0.2s;
+$grey-text: #E3E3E3; 
+$hover-text: #F0F0F0;
+$green-color: #129507;
+
+body {
+    font-family: 'Avenir Next Cyr';
+    font-weight: normal;
+    font-style: normal;
+    color: $main-color;
+    height: 100%;
+    display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+    overflow-x: hidden;
+}
