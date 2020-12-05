@@ -11,6 +11,13 @@
     outline: none;
 }
 
+button:active, button:focus {
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: 0 !important;
+}
+
 html {
     height: 100%;
 }
@@ -1676,6 +1683,7 @@ footer {
     @media screen and (max-width: 1340px) {
         &.slick-slider {
             margin-top: 50px;
+            display: none;
             .slick-prev {
                 top: -40px;
                 right: 50px;
@@ -1788,11 +1796,11 @@ footer {
         @include size-lg(4);
         @include size-md(4);
         @include size-sm(4);
-        @include size-xs(11);
-        max-height: 188px;
+        @include size-xs(8);
+        max-height: 200px;
 
         @media (max-width: 1339px) {
-             min-width: 260px;
+             min-width: 200px;
              overflow: hidden;
              scroll-snap-align: unset;
              flex-shrink: 0;
@@ -1932,6 +1940,7 @@ footer {
         width: 100%;
         height: 230px;
         object-fit: cover;
+        object-position: top;
         @media (min-width:992px) {
             height: 290px;   
         }
@@ -2779,7 +2788,7 @@ footer {
             @include size-xs(12);
             position: relative;
         }
-        @media (min-width:767px) {
+        @media (min-width:768px) {
             margin-top: 30px;
             margin-bottom: 20px;
         }
@@ -2791,6 +2800,11 @@ footer {
         height: 100%;
         object-fit: cover;
         object-position: cover;
+        
+        @media (min-width:600px) {
+            min-height: 270px;
+            max-height: 270px;
+        }
     }
     &__text {
         font-size: 18px;
@@ -2838,8 +2852,8 @@ footer {
         text-decoration: none;
         transition: $transition;
         cursor: pointer;
-        margin-top: 60px;
-        margin-bottom: 70px;
+        margin-top: 30px;
+        margin-bottom: 40px;
         display: inline-flex;
         align-items: center;
         &:hover, &:focus {

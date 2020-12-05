@@ -542,6 +542,15 @@ body {
   outline: none;
 }
 
+button:active,
+button:focus {
+  outline: none !important;
+}
+
+button::-moz-focus-inner {
+  border: 0 !important;
+}
+
 html {
   height: 100%;
 }
@@ -2186,7 +2195,7 @@ footer .social__link .twiter_icon.active {
   margin-left: 0.9375rem;
   margin-right: 0.9375rem;
   width: calc(16.66667% - 1.875rem);
-  max-height: 188px;
+  max-height: 200px;
 }
 
 .jewelry-static .jewelry-item__title {
@@ -2258,6 +2267,7 @@ footer .social__link .twiter_icon.active {
   width: 100%;
   height: 230px;
   object-fit: cover;
+  object-position: top;
 }
 
 .blog-item__link {
@@ -2931,8 +2941,8 @@ footer .social__link .twiter_icon.active {
   text-decoration: none;
   transition: all 0.2s;
   cursor: pointer;
-  margin-top: 60px;
-  margin-bottom: 70px;
+  margin-top: 30px;
+  margin-bottom: 40px;
   display: inline-flex;
   align-items: center;
 }
@@ -3661,7 +3671,7 @@ footer .social__link .twiter_icon.active {
   width: 100%;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 375px) {
   .title-block .col {
     width: calc(100% - 1.875rem);
   }
@@ -3735,7 +3745,7 @@ footer .social__link .twiter_icon.active {
   }
 
   .jewelry-static .col {
-    width: calc(91.66667% - 1.875rem);
+    width: calc(66.66667% - 1.875rem);
   }
 
   .blog .block-posts .col {
@@ -3916,16 +3926,16 @@ footer .social__link .twiter_icon.active {
   .travel .travel-posts .col:last-child {
     display: none;
   }
+
+  .stone-page__image {
+    min-height: 270px;
+    max-height: 270px;
+  }
 }
 
 @media (min-width: 767px) {
   .blog-post__info-item:last-child {
     margin-left: auto;
-  }
-
-  .stone-page__images {
-    margin-top: 30px;
-    margin-bottom: 20px;
   }
 }
 
@@ -3976,6 +3986,11 @@ footer .social__link .twiter_icon.active {
 
   .travel-item__img {
     height: 250px;
+  }
+
+  .stone-page__images {
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 
   .stone-page .slick-prev {
@@ -4528,6 +4543,7 @@ footer .social__link .twiter_icon.active {
 @media screen and (max-width: 1340px) {
   .jewelry-items.slick-slider {
     margin-top: 50px;
+    display: none;
   }
 
   .jewelry-items.slick-slider .slick-prev {
@@ -4578,7 +4594,7 @@ footer .social__link .twiter_icon.active {
   }
 
   .jewelry-static .col {
-    min-width: 260px;
+    min-width: 200px;
     overflow: hidden;
     scroll-snap-align: unset;
     flex-shrink: 0;
