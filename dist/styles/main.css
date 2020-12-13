@@ -2773,8 +2773,20 @@ footer .social__link .twiter_icon.active {
 
 .blog-post__image-right {
   float: right;
-  width: 50%;
+  width: 45%;
   margin: 10px 0px 10px 25px;
+}
+
+.blog-post__image-left {
+  float: left;
+  width: 45%;
+  margin: 10px 25px 10px 0;
+}
+
+.blog-post__image-cent {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 20px;
 }
 
 .blog-post p {
@@ -4858,6 +4870,20 @@ footer .social__link .twiter_icon.active {
   }
 
   .blog-post__image-right {
+    width: 100%;
+    margin: 0 0 10px 0;
+    display: block;
+    object-fit: cover;
+  }
+
+  .blog-post__image-left {
+    width: 100%;
+    margin: 0 0 10px 0;
+    display: block;
+    object-fit: cover;
+  }
+
+  .blog-post__image-cent {
     width: 100%;
     margin: 0 0 10px 0;
     display: block;

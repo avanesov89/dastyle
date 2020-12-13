@@ -2653,8 +2653,32 @@ footer {
     &__image {
         &-right {
             float: right;
-            width: 50%;
+            width: 45%;
             margin: 10px 0px 10px 25px;
+            
+            @media (max-width:767px) {
+                width: 100%;
+                margin: 0 0 10px 0;
+                display: block;
+                object-fit: cover;
+            }
+        }
+        &-left {
+            float: left;
+            width: 45%;
+            margin: 10px 25px 10px 0;
+            
+            @media (max-width:767px) {
+                width: 100%;
+                margin: 0 0 10px 0;
+                display: block;
+                object-fit: cover;
+            }
+        }
+        &-cent {
+            width: auto;
+            max-width: 100%;
+            margin-bottom: 20px;
             
             @media (max-width:767px) {
                 width: 100%;
