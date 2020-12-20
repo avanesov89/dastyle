@@ -2799,6 +2799,13 @@ footer .social__link .twiter_icon.active {
   flex-direction: column;
 }
 
+.blog-post .img-block span {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-style: italic;
+}
+
 .blog-post p {
   margin: 0 0 15px 0;
 }
