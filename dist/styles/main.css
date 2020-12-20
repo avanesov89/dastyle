@@ -2785,9 +2785,9 @@ footer .social__link .twiter_icon.active {
   max-width: max-content;
 }
 
-.blog-post__image-cent {
+.blog-post__image-center {
   width: auto;
-  max-width: 80%;
+  max-width: 700px;
   margin-bottom: 20px;
 }
 
@@ -2795,6 +2795,8 @@ footer .social__link .twiter_icon.active {
   display: flex;
   justify-content: center;
   width: 100%;
+  align-items: center;
+  flex-direction: column;
 }
 
 .blog-post p {
@@ -3691,7 +3693,7 @@ footer .social__link .twiter_icon.active {
   width: 100%;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 320px) {
   .title-block .col {
     width: calc(100% - 1.875rem);
   }
@@ -4891,7 +4893,7 @@ footer .social__link .twiter_icon.active {
     object-fit: cover;
   }
 
-  .blog-post__image-cent {
+  .blog-post__image-center {
     width: 100%;
     margin: 0 0 10px 0;
     display: block;
